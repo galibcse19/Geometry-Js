@@ -19,12 +19,12 @@
                         <h2 class="card-title">Triangle</h2>
                         <p>Area (A) =  0.5 x B x H</p>
                         <div class="flex my-4 items-center">
-                             <input type="text" placeholder="B" class="w-24 mx-3 p-2"><p>cm</p>
-                             <input type="text" placeholder="H" class="w-24 mx-3 p-2"><p>cm</p>
+                             <input id="TriangleValueB" type="text" placeholder="B" class="w-24 mx-3 p-2"><p>cm</p>
+                             <input id="TriangleValueH" type="text" placeholder="H" class="w-24 mx-3 p-2"><p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="setTriangleValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="TriangleBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -36,14 +36,14 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p>Area (A) =  W x I</p>
                         <div class="flex my-4 items-center">
-                            <input type="text" placeholder="W" class="w-24 mx-3 p-2">
+                            <input id="RectangleValueW" type="text" placeholder="W" class="w-24 mx-3 p-2">
                             <p>cm</p>
-                            <input type="text" placeholder="I" class="w-24 mx-3 p-2">
+                            <input id="RectangleValueI" type="text" placeholder="I" class="w-24 mx-3 p-2">
                             <p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="RectangleValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="RectangleBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -55,14 +55,14 @@
                         <h2 class="card-title">Parallelogram</h2>
                         <p>Area (A) =  B x H</p>
                         <div class="flex my-4 items-center">
-                            <input type="text" placeholder="B" class="w-24 mx-3 p-2">
+                            <input id="ParallelogramValueB" type="text" placeholder="B" class="w-24 mx-3 p-2">
                             <p>cm</p>
-                            <input type="text" placeholder="H" class="w-24 mx-3 p-2">
+                            <input id="ParallelogramValueH" type="text" placeholder="H" class="w-24 mx-3 p-2">
                             <p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="ParallelogramValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="ParallelogramBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -86,14 +86,14 @@
                         <h2 class="card-title">Rhombus</h2>
                         <p>Area (A) = 0.5 x D<sub>1</sub> x D<sub>2</sub></p>
                         <div class="flex my-4 items-center">
-                            <input type="text" placeholder="D1" class="w-24 mx-3 p-2">
+                            <input id="RhombusValueD1" type="text" placeholder="D1" class="w-24 mx-3 p-2">
                             <p>cm</p>
-                            <input type="text" placeholder="D2" class="w-24 mx-3 p-2">
+                            <input id="RhombusValueD2" type="text" placeholder="D2" class="w-24 mx-3 p-2">
                             <p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="RhombusValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="RhombusBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -105,14 +105,14 @@
                         <h2 class="card-title">Pentagon</h2>
                         <p>Area (A) =  0.5 x P x B</p>
                         <div class="flex my-4 items-center">
-                            <input type="text" placeholder="P" class="w-24 mx-3 p-2">
+                            <input id="PentagonValueP" type="text" placeholder="P" class="w-24 mx-3 p-2">
                             <p>cm</p>
-                            <input type="text" placeholder="B" class="w-24 mx-3 p-2">
+                            <input id="PentagonValueB" type="text" placeholder="B" class="w-24 mx-3 p-2">
                             <p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="PentagonValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="PentagonBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -124,14 +124,14 @@
                         <h2 class="card-title">Ellipse</h2>
                         <p>Area (A) = Pi x A x B</p>
                         <div class="flex my-4 items-center">
-                            <input type="text" placeholder="A" class="w-24 mx-3 p-2">
+                            <input id="EllipseValueA" type="text" placeholder="A" class="w-24 mx-3 p-2">
                             <p>cm</p>
-                            <input type="text" placeholder="B" class="w-24 mx-3 p-2">
+                            <input id="EllipseValueB" type="text" placeholder="B" class="w-24 mx-3 p-2">
                             <p>cm</p>
                         </div>
-                        <p class="text-xl mb-2">Area = <span>00</span> cm</p>
+                        <p class="text-xl mb-2">Area = <span id="EllipseValue">00</span> cm</p>
                         <div class=" ">
-                            <button class="btn btn-outline w-full px-20 text-xl">Calculate</button>
+                            <button id="EllipseBtn" class="btn btn-outline w-full px-20 text-xl">Calculate</button>
                         </div>
                     </div>
                 </div>
